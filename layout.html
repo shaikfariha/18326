@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic layout</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        background-color: #24780888;
+        color: rgba(241, 12, 12, 0.518);
+        padding: 30px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: #44030383;
+        padding: 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    div {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #ce400886;
+        height: 300px;
+    }
+
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    footer {
+        background-color: #04eacf98;
+        color: rgba(38, 5, 79, 0.866);
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+
+        nav,
+        div {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
+<body>
+    <h2>Basic layout</h2>
+
+    <header>
+        <h2> Interncall</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#"> Web development</a></li>
+                <li><a href="#">Data science</a></li>
+                <li><a href="#">Aptitude</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h1>Courses</h1>
+            <p> Web development, also known as website development, refers to the tasks associated with creating,
+                building, and maintaining websites and web applications that run online on a browser. It may, however,
+                also include web design, web programming, and database management..</p>
+            <p>Data science combines math and statistics, specialized programming, advanced analytics, artificial
+                intelligence (AI) and machine learning with specific subject matter expertise to uncover actionable
+                insights hidden in an organization's data. These insights can be used to guide decision making and
+                strategic planning.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><img src="https://www.simuleduco.com/assets/img/logo.png" height="100" width="200"> <br>Join Us</p>
+    </footer>
+
+</body>
+
+</html>
